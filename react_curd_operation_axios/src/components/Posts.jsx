@@ -17,7 +17,6 @@ export const Posts = () => {
     getPostData();
   }, []);
 
-  //   function to delete Post
   const handleDeletePost = async (id) => {
     try {
       const res = await deletePost(id);
@@ -34,7 +33,7 @@ export const Posts = () => {
     }
   };
 
-  //handleUpdatePost
+  
   const handleUpdatePost = (curElem) => setUpdateDataApi(curElem);
 
   return (
